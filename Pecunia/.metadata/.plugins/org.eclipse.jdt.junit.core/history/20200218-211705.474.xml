@@ -1,0 +1,91 @@
+<?xml version="1.0" encoding="UTF-8"?><testrun name="PassbookMaintenanceDaoImplTest" project="sprint1" tests="10" started="10" failures="1" errors="0" ignored="0">
+  <testsuite name="com.capgemini.pecunia.DAOTest.PassbookMaintenanceDaoImplTest" time="0.005" displayname="PassbookMaintenanceDaoImplTest" uniqueid="[engine:junit-jupiter]/[class:com.capgemini.pecunia.DAOTest.PassbookMaintenanceDaoImplTest]">
+    <testcase name="testAccountNotPresent" classname="com.capgemini.pecunia.DAOTest.PassbookMaintenanceDaoImplTest" time="0.002" displayname="testAccountNotPresent()" uniqueid="[engine:junit-jupiter]/[class:com.capgemini.pecunia.DAOTest.PassbookMaintenanceDaoImplTest]/[method:testAccountNotPresent()]"/>
+    <testcase name="testAccountVerificationDao" classname="com.capgemini.pecunia.DAOTest.PassbookMaintenanceDaoImplTest" time="0.0" displayname="testAccountVerificationDao()" uniqueid="[engine:junit-jupiter]/[class:com.capgemini.pecunia.DAOTest.PassbookMaintenanceDaoImplTest]/[method:testAccountVerificationDao()]"/>
+    <testcase name="checkAccountNumberFormet" classname="com.capgemini.pecunia.DAOTest.PassbookMaintenanceDaoImplTest" time="0.0" displayname="checkAccountNumberFormet()" uniqueid="[engine:junit-jupiter]/[class:com.capgemini.pecunia.DAOTest.PassbookMaintenanceDaoImplTest]/[method:checkAccountNumberFormet()]"/>
+    <testcase name="checkAccountNumberLength" classname="com.capgemini.pecunia.DAOTest.PassbookMaintenanceDaoImplTest" time="0.0" displayname="checkAccountNumberLength()" uniqueid="[engine:junit-jupiter]/[class:com.capgemini.pecunia.DAOTest.PassbookMaintenanceDaoImplTest]/[method:checkAccountNumberLength()]"/>
+    <testcase name="testDateAccountSummary" classname="com.capgemini.pecunia.DAOTest.PassbookMaintenanceDaoImplTest" time="0.0" displayname="testDateAccountSummary()" uniqueid="[engine:junit-jupiter]/[class:com.capgemini.pecunia.DAOTest.PassbookMaintenanceDaoImplTest]/[method:testDateAccountSummary()]"/>
+    <testcase name="accountSummaryTest" classname="com.capgemini.pecunia.DAOTest.PassbookMaintenanceDaoImplTest" time="0.0" displayname="accountSummaryTest()" uniqueid="[engine:junit-jupiter]/[class:com.capgemini.pecunia.DAOTest.PassbookMaintenanceDaoImplTest]/[method:accountSummaryTest()]"/>
+    <testcase name="testUpdatePassBook" classname="com.capgemini.pecunia.DAOTest.PassbookMaintenanceDaoImplTest" time="0.0" displayname="testUpdatePassBook()" uniqueid="[engine:junit-jupiter]/[class:com.capgemini.pecunia.DAOTest.PassbookMaintenanceDaoImplTest]/[method:testUpdatePassBook()]"/>
+    <testcase name="passbook" classname="com.capgemini.pecunia.DAOTest.PassbookMaintenanceDaoImplTest" time="0.0" displayname="passbook()" uniqueid="[engine:junit-jupiter]/[class:com.capgemini.pecunia.DAOTest.PassbookMaintenanceDaoImplTest]/[method:passbook()]"/>
+    <testcase name="passbookCheck" classname="com.capgemini.pecunia.DAOTest.PassbookMaintenanceDaoImplTest" time="0.003" displayname="passbookCheck()" uniqueid="[engine:junit-jupiter]/[class:com.capgemini.pecunia.DAOTest.PassbookMaintenanceDaoImplTest]/[method:passbookCheck()]">
+      <failure>org.opentest4j.AssertionFailedError: array contents differ at index [0], expected: &lt;com.capgemini.pecunia.DTO.Transaction@5e853265&gt; but was: &lt;com.capgemini.pecunia.DTO.Transaction@67205a84&gt;&#13;
+	at org.junit.jupiter.api.AssertionUtils.fail(AssertionUtils.java:39)&#13;
+	at org.junit.jupiter.api.AssertArrayEquals.failArraysNotEqual(AssertArrayEquals.java:432)&#13;
+	at org.junit.jupiter.api.AssertArrayEquals.assertArrayElementsEqual(AssertArrayEquals.java:392)&#13;
+	at org.junit.jupiter.api.AssertArrayEquals.assertArrayEquals(AssertArrayEquals.java:349)&#13;
+	at org.junit.jupiter.api.AssertArrayEquals.assertArrayEquals(AssertArrayEquals.java:162)&#13;
+	at org.junit.jupiter.api.AssertArrayEquals.assertArrayEquals(AssertArrayEquals.java:158)&#13;
+	at org.junit.jupiter.api.Assertions.assertArrayEquals(Assertions.java:1435)&#13;
+	at com.capgemini.pecunia.DAOTest.PassbookMaintenanceDaoImplTest.passbookCheck(PassbookMaintenanceDaoImplTest.java:62)&#13;
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)&#13;
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)&#13;
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)&#13;
+	at java.lang.reflect.Method.invoke(Method.java:498)&#13;
+	at org.junit.platform.commons.util.ReflectionUtils.invokeMethod(ReflectionUtils.java:686)&#13;
+	at org.junit.jupiter.engine.execution.MethodInvocation.proceed(MethodInvocation.java:60)&#13;
+	at org.junit.jupiter.engine.execution.InvocationInterceptorChain$ValidatingInvocation.proceed(InvocationInterceptorChain.java:131)&#13;
+	at org.junit.jupiter.engine.extension.TimeoutExtension.intercept(TimeoutExtension.java:149)&#13;
+	at org.junit.jupiter.engine.extension.TimeoutExtension.interceptTestableMethod(TimeoutExtension.java:140)&#13;
+	at org.junit.jupiter.engine.extension.TimeoutExtension.interceptTestMethod(TimeoutExtension.java:84)&#13;
+	at org.junit.jupiter.engine.execution.ExecutableInvoker$ReflectiveInterceptorCall.lambda$ofVoidMethod$0(ExecutableInvoker.java:115)&#13;
+	at org.junit.jupiter.engine.execution.ExecutableInvoker.lambda$invoke$0(ExecutableInvoker.java:105)&#13;
+	at org.junit.jupiter.engine.execution.InvocationInterceptorChain$InterceptedInvocation.proceed(InvocationInterceptorChain.java:106)&#13;
+	at org.junit.jupiter.engine.execution.InvocationInterceptorChain.proceed(InvocationInterceptorChain.java:64)&#13;
+	at org.junit.jupiter.engine.execution.InvocationInterceptorChain.chainAndInvoke(InvocationInterceptorChain.java:45)&#13;
+	at org.junit.jupiter.engine.execution.InvocationInterceptorChain.invoke(InvocationInterceptorChain.java:37)&#13;
+	at org.junit.jupiter.engine.execution.ExecutableInvoker.invoke(ExecutableInvoker.java:104)&#13;
+	at org.junit.jupiter.engine.execution.ExecutableInvoker.invoke(ExecutableInvoker.java:98)&#13;
+	at org.junit.jupiter.engine.descriptor.TestMethodTestDescriptor.lambda$invokeTestMethod$6(TestMethodTestDescriptor.java:205)&#13;
+	at org.junit.platform.engine.support.hierarchical.ThrowableCollector.execute(ThrowableCollector.java:73)&#13;
+	at org.junit.jupiter.engine.descriptor.TestMethodTestDescriptor.invokeTestMethod(TestMethodTestDescriptor.java:201)&#13;
+	at org.junit.jupiter.engine.descriptor.TestMethodTestDescriptor.execute(TestMethodTestDescriptor.java:137)&#13;
+	at org.junit.jupiter.engine.descriptor.TestMethodTestDescriptor.execute(TestMethodTestDescriptor.java:71)&#13;
+	at org.junit.platform.engine.support.hierarchical.NodeTestTask.lambda$executeRecursively$5(NodeTestTask.java:135)&#13;
+	at org.junit.platform.engine.support.hierarchical.ThrowableCollector.execute(ThrowableCollector.java:73)&#13;
+	at org.junit.platform.engine.support.hierarchical.NodeTestTask.lambda$executeRecursively$7(NodeTestTask.java:125)&#13;
+	at org.junit.platform.engine.support.hierarchical.Node.around(Node.java:135)&#13;
+	at org.junit.platform.engine.support.hierarchical.NodeTestTask.lambda$executeRecursively$8(NodeTestTask.java:123)&#13;
+	at org.junit.platform.engine.support.hierarchical.ThrowableCollector.execute(ThrowableCollector.java:73)&#13;
+	at org.junit.platform.engine.support.hierarchical.NodeTestTask.executeRecursively(NodeTestTask.java:122)&#13;
+	at org.junit.platform.engine.support.hierarchical.NodeTestTask.execute(NodeTestTask.java:80)&#13;
+	at java.util.ArrayList.forEach(ArrayList.java:1257)&#13;
+	at org.junit.platform.engine.support.hierarchical.SameThreadHierarchicalTestExecutorService.invokeAll(SameThreadHierarchicalTestExecutorService.java:38)&#13;
+	at org.junit.platform.engine.support.hierarchical.NodeTestTask.lambda$executeRecursively$5(NodeTestTask.java:139)&#13;
+	at org.junit.platform.engine.support.hierarchical.ThrowableCollector.execute(ThrowableCollector.java:73)&#13;
+	at org.junit.platform.engine.support.hierarchical.NodeTestTask.lambda$executeRecursively$7(NodeTestTask.java:125)&#13;
+	at org.junit.platform.engine.support.hierarchical.Node.around(Node.java:135)&#13;
+	at org.junit.platform.engine.support.hierarchical.NodeTestTask.lambda$executeRecursively$8(NodeTestTask.java:123)&#13;
+	at org.junit.platform.engine.support.hierarchical.ThrowableCollector.execute(ThrowableCollector.java:73)&#13;
+	at org.junit.platform.engine.support.hierarchical.NodeTestTask.executeRecursively(NodeTestTask.java:122)&#13;
+	at org.junit.platform.engine.support.hierarchical.NodeTestTask.execute(NodeTestTask.java:80)&#13;
+	at java.util.ArrayList.forEach(ArrayList.java:1257)&#13;
+	at org.junit.platform.engine.support.hierarchical.SameThreadHierarchicalTestExecutorService.invokeAll(SameThreadHierarchicalTestExecutorService.java:38)&#13;
+	at org.junit.platform.engine.support.hierarchical.NodeTestTask.lambda$executeRecursively$5(NodeTestTask.java:139)&#13;
+	at org.junit.platform.engine.support.hierarchical.ThrowableCollector.execute(ThrowableCollector.java:73)&#13;
+	at org.junit.platform.engine.support.hierarchical.NodeTestTask.lambda$executeRecursively$7(NodeTestTask.java:125)&#13;
+	at org.junit.platform.engine.support.hierarchical.Node.around(Node.java:135)&#13;
+	at org.junit.platform.engine.support.hierarchical.NodeTestTask.lambda$executeRecursively$8(NodeTestTask.java:123)&#13;
+	at org.junit.platform.engine.support.hierarchical.ThrowableCollector.execute(ThrowableCollector.java:73)&#13;
+	at org.junit.platform.engine.support.hierarchical.NodeTestTask.executeRecursively(NodeTestTask.java:122)&#13;
+	at org.junit.platform.engine.support.hierarchical.NodeTestTask.execute(NodeTestTask.java:80)&#13;
+	at org.junit.platform.engine.support.hierarchical.SameThreadHierarchicalTestExecutorService.submit(SameThreadHierarchicalTestExecutorService.java:32)&#13;
+	at org.junit.platform.engine.support.hierarchical.HierarchicalTestExecutor.execute(HierarchicalTestExecutor.java:57)&#13;
+	at org.junit.platform.engine.support.hierarchical.HierarchicalTestEngine.execute(HierarchicalTestEngine.java:51)&#13;
+	at org.junit.platform.launcher.core.DefaultLauncher.execute(DefaultLauncher.java:229)&#13;
+	at org.junit.platform.launcher.core.DefaultLauncher.lambda$execute$6(DefaultLauncher.java:197)&#13;
+	at org.junit.platform.launcher.core.DefaultLauncher.withInterceptedStreams(DefaultLauncher.java:211)&#13;
+	at org.junit.platform.launcher.core.DefaultLauncher.execute(DefaultLauncher.java:191)&#13;
+	at org.junit.platform.launcher.core.DefaultLauncher.execute(DefaultLauncher.java:137)&#13;
+	at org.eclipse.jdt.internal.junit5.runner.JUnit5TestReference.run(JUnit5TestReference.java:89)&#13;
+	at org.eclipse.jdt.internal.junit.runner.TestExecution.run(TestExecution.java:41)&#13;
+	at org.eclipse.jdt.internal.junit.runner.RemoteTestRunner.runTests(RemoteTestRunner.java:542)&#13;
+	at org.eclipse.jdt.internal.junit.runner.RemoteTestRunner.runTests(RemoteTestRunner.java:770)&#13;
+	at org.eclipse.jdt.internal.junit.runner.RemoteTestRunner.run(RemoteTestRunner.java:464)&#13;
+	at org.eclipse.jdt.internal.junit.runner.RemoteTestRunner.main(RemoteTestRunner.java:210)&#13;
+&#13;
+</failure>
+    </testcase>
+    <testcase name="testAccountSummary" classname="com.capgemini.pecunia.DAOTest.PassbookMaintenanceDaoImplTest" time="0.0" displayname="testAccountSummary()" uniqueid="[engine:junit-jupiter]/[class:com.capgemini.pecunia.DAOTest.PassbookMaintenanceDaoImplTest]/[method:testAccountSummary()]"/>
+  </testsuite>
+</testrun>

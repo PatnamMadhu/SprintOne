@@ -1,0 +1,32 @@
+package com.capgemini.pecunia.services;
+
+import java.time.LocalDate;
+import java.util.List;
+import com.capgemini.pecunia.DAO.PassbookMaintenanceDaoImpl;
+import com.capgemini.pecunia.DTO.Transaction;
+import com.capgemini.pecunia.exceptions.AccountNumberValidation;
+
+
+public class PassbookMaintenanceServiceImpl implements PassbookMaintenanceService{
+
+	PassbookMaintenanceDaoImpl accountObj=new PassbookMaintenanceDaoImpl();
+	
+	
+	public boolean accountVerificationService(String accountId) throws AccountNumberValidation
+	{
+		boolean result=accountObj.accountValidation(accountId);//string accountNumber
+		return result;
+	}
+	
+	public List<Transaction> updatePassbook(String accountNumber) 
+	{
+		List<Transaction> listOfTran=accountObj.updatePassbook(accountNumber);
+		return listOfTran;
+	}
+
+	public List<?> accountSummary(String accountNumber, LocalDate fdate, LocalDate lDate) 
+	{
+		// TODO Auto-generated method stub
+		return null;
+	}
+}

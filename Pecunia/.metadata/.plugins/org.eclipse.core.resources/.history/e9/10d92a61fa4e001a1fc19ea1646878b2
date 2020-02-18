@@ -1,0 +1,10 @@
+ package com.capgemini.pecunia.util;
+
+import java.util.ArrayList;
+import java.util.List;
+
+import com.capgemini.pecunia.DAO.Transaction;
+
+public class transactionRepository {
+	List<Transaction> transaction=new ArrayList<Transaction>();
+ }

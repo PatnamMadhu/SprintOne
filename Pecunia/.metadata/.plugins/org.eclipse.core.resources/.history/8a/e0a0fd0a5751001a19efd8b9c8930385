@@ -1,0 +1,7 @@
+package com.capgemini.pecunia.exceptions;
+
+public class AccountNumberValidation extends Exception{
+	public AccountNumberValidation(String s){
+		super(s);
+	}
+}

@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<qualifiedTypeNameHistroy>
+<fullyQualifiedTypeName name="java.time.format.DateTimeParseException"/>
+<fullyQualifiedTypeName name="com.capgemini.pecunia.DAO.PassbookMaintenanceDao"/>
+<fullyQualifiedTypeName name="com.capgemini.pecunia.services.PassbookMaintenanceServiceImpl"/>
+<fullyQualifiedTypeName name="com.capgemini.pecunia.DAO.PassbookMaintenanceDaoImpl"/>
+<fullyQualifiedTypeName name="org.junit.jupiter.api.BeforeAll"/>
+<fullyQualifiedTypeName name="org.junit.jupiter.api.Test"/>
+<fullyQualifiedTypeName name="java.util.Arrays"/>
+</qualifiedTypeNameHistroy>

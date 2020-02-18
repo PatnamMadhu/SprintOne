@@ -1,0 +1,12 @@
+package com.capgemini.pecunia.DAO;
+
+import java.time.format.DateTimeFormatter;
+
+public class Debug {
+
+	public static void main(String[] args) {
+		DateTimeFormatter formatter =DateTimeFormatter.ofPattern("dd/MM/yyyy");
+
+	}
+
+}

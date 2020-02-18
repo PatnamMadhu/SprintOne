@@ -1,0 +1,54 @@
+ package com.capgemini.pecunia.util;
+
+import java.time.LocalDate;
+import java.time.format.DateTimeFormatter;
+import java.util.ArrayList;
+import java.util.List;
+
+import com.capgemini.pecunia.DAO.Transaction;
+
+public class TransactionRepository {
+	public static List<Transaction> transaction=new ArrayList<Transaction>();
+	int balance1=10000,balance2=20000,balance3=30000,balance4=40000;
+	public TransactionRepository() {
+		DateTimeFormatter formatter =DateTimeFormatter.ofPattern("dd MM yyyy");
+		
+		Transaction obj=new Transaction();
+		obj.setAccountNumber(20424444083L);
+		obj.setMoney(-500);
+		obj.setAvlBalance(balance3-500);
+		obj.setDate(LocalDate.parse("10 01 2019", formatter));
+		transaction.add(obj);
+		
+		Transaction obj=new Transaction();
+		obj.setAccountNumber(20424444082L);
+		obj.setMoney(1500);
+		obj.setAvlBalance(balance2+1500);
+		obj.setDate(LocalDate.parse("07 01 2019", formatter));
+		transaction.add(obj);
+
+//		transaction.add(new Transaction(,,,));
+//		transaction.add(new Transaction(20424444081L,700,balance1+700,LocalDate.parse("30 01 2019", formatter)));
+//		transaction.add(new Transaction(20424444084L,-1200,balance4-1200,LocalDate.parse("14 01 2019", formatter)));
+//		transaction.add(new Transaction(20424444083L,-1400,balance3-1400,LocalDate.parse("08 02 2019", formatter)));
+//		transaction.add(new Transaction(20424444083L,200,balance3+200,LocalDate.parse("09 02 2019", formatter)));
+//		transaction.add(new Transaction(20424444083L,1300,balance3+1300,LocalDate.parse("05 03 2019", formatter)));
+//		transaction.add(new Transaction(20424444083L,-600,balance3-600,LocalDate.parse("27 07 2019", formatter)));
+//		transaction.add(new Transaction(20424444082L,-1700,balance2-1700,LocalDate.parse("13 03 2019", formatter)));
+//		transaction.add(new Transaction(20424444082L,-2100,balance2-2100,LocalDate.parse("14 04 2019", formatter)));
+//		transaction.add(new Transaction(20424444082L,1300,balance2+1300,LocalDate.parse("19 09 2019", formatter)));
+//		transaction.add(new Transaction(20424444082L,1900,balance2+1900,LocalDate.parse("02 11 2019", formatter)));
+//		transaction.add(new Transaction(20424444081L,13000,balance1+13000,LocalDate.parse("09 04 2019", formatter)));
+//		transaction.add(new Transaction(20424444081L,-500,balance1+4000,LocalDate.parse("16 08 2019", formatter)));
+//		transaction.add(new Transaction(20424444081L,-7000,balance1-7000,LocalDate.parse("29 12 2019", formatter)));
+//		transaction.add(new Transaction(20424444081L,-19000,balance1-19000,LocalDate.parse("25 01 2020", formatter)));
+//		transaction.add(new Transaction(20424444084L,1800,balance4+1800,LocalDate.parse("11 04 2019", formatter)));
+//		transaction.add(new Transaction(20424444084L,21000,balance4+21000,LocalDate.parse("07 03 2019", formatter)));
+//		transaction.add(new Transaction(20424444084L,-13000,balance4-13000,LocalDate.parse("21 04 2019", formatter)));
+//		transaction.add(new Transaction(20424444084L,-1700,balance4-1700,LocalDate.parse("22 09 2019", formatter)));
+//		transaction.add(new Transaction(20424444081L,1200,balance1+1200,LocalDate.parse("30 01 2020", formatter)));
+//		transaction.add(new Transaction(20424444083L,-1100,balance3-1100,LocalDate.parse("24 09 2019", formatter)));
+	
+	}
+	
+ } 

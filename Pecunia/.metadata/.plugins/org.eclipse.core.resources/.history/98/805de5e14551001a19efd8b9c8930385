@@ -1,0 +1,7 @@
+package com.capgemini.pecunia.services;
+
+import java.util.List;
+
+public interface PassbookMaintenanceService {
+	public List<?> updatePassbook(String s);
+}

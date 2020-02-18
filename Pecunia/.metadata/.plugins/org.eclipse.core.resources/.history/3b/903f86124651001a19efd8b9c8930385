@@ -1,0 +1,18 @@
+package com.capgemini.pecunia.services;
+
+import com.capgemini.pecunia.DAO.AccountVerificationDAO;
+
+
+public class PassBookMaintanace {
+
+	AccountVerificationDAO accountObj=new AccountVerificationDAO();
+	public boolean accountVerificationService(long accountId){
+		boolean result=accountObj.accountVerificationDAO(accountId);
+		return result;
+	}
+	
+	public void passBookMaintananceService(long accountNumber) {
+		
+		accountObj.passBookMaintananceDAO(accountNumber);
+	}
+}

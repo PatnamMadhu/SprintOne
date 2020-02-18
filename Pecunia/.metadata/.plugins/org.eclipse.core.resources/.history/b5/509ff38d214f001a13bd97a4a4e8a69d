@@ -1,0 +1,6 @@
+package com.capgemini.pecunia.DTO;
+
+public class Account {
+	private long accountNumber;
+	
+}

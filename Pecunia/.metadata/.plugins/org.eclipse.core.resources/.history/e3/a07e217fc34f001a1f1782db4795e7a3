@@ -1,0 +1,10 @@
+package com.capgemini.pecunia.services;
+
+import com.capgemini.pecunia.DTO.Account;
+
+public class AccountVerificationService {
+	public boolean AccountVerification(){
+		Account account=new Account();
+		account.getAccountNumber()
+	}
+}

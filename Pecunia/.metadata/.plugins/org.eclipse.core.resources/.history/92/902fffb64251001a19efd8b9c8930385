@@ -1,0 +1,26 @@
+package com.capgemini.pecunia.services;
+
+import com.capgemini.pecunia.DAO.AccountVerificationDAO;
+import com.capgemini.pecunia.exceptions.AccountNumberValidation;
+
+
+public class AccountVerificationService {
+
+	public void accountNumberValidation(String accountNumber) throws AccountNumberValidation{
+		int length = String.valueOf(accountNumber).length();
+		if(length!=12 ) {
+			throw new AccountNumberValidation("Account number must contain 12 digits");
+		}
+	}
+	
+	AccountVerificationDAO accountObj=new AccountVerificationDAO();
+	public boolean accountVerificationService(long accountId){
+		boolean result=accountObj.accountVerificationDAO(accountId);
+		return result;
+	}
+	
+	public void passBookMaintananceService(long accountNumber) {
+		
+		accountObj.passBookMaintananceDAO(accountNumber);
+	}
+}

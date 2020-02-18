@@ -1,0 +1,5 @@
+package com.capgemini.pecunia.exceptions;
+
+public class AccountNumberValidation {
+
+}

@@ -1,0 +1,19 @@
+package com.capgemini.pecunia.util;
+
+import java.util.HashMap;
+import java.util.Map;
+
+import com.capgemini.pecunia.DTO.Account;
+
+public class AccountListRepository {
+	private static Map<Long,Account> accounts=new HashMap<Long,Account>();
+	public AccountListRepository(){
+		accounts.put(20424444083l, new Account(1000,"Madhu"));
+		accounts.put(20424444081l, new Account(27000,"Yogesh"));
+		accounts.put(20424444082l, new Account(36000,"Shashwat"));
+		accounts.put(20424444084l, new Account(10000,"subham"));
+	}
+	public static Map<Long, Double> getAccounts() {
+		return accounts;
+	}
+}

@@ -1,0 +1,40 @@
+ package com.capgemini.pecunia.util;
+
+import java.time.LocalDate;
+import java.time.format.DateTimeFormatter;
+import java.util.ArrayList;
+import java.util.List;
+
+import com.capgemini.pecunia.DAO.Transaction;
+
+public class TransactionRepository {
+	List<Transaction> transaction=new ArrayList<Transaction>();
+	int balance1=10000,balance2=20000,balance3=30000,balance4=40000;
+	public TransactionRepository() {
+		DateTimeFormatter formatter =DateTimeFormatter.ofPattern("dd MM yyyy");
+		transaction.add(new Transaction(20424444083L,-500,balance3-500,LocalDate.parse("10 01 2019", formatter)));
+		transaction.add(new Transaction(20424444082L,1500,balance2+1500,LocalDate.parse("10 01 2019", formatter)));
+		transaction.add(new Transaction(20424444081L,700,balance1+700,LocalDate.parse("10 01 2019", formatter)));
+		transaction.add(new Transaction(20424444084L,-1200,balance4-1200,LocalDate.parse("10 01 2019", formatter)));
+		transaction.add(new Transaction(20424444083L,-1400,balance3-1400,LocalDate.parse("10 01 2019", formatter)));
+		transaction.add(new Transaction(20424444083L,200,balance3+200,LocalDate.parse("10 01 2019", formatter)));
+		transaction.add(new Transaction(20424444083L,1300,balance3+1300,LocalDate.parse("10 01 2019", formatter)));
+		transaction.add(new Transaction(20424444083L,-600,balance3-600,LocalDate.parse("10 01 2019", formatter)));
+		transaction.add(new Transaction(20424444082L,-500,balance2,LocalDate.parse("10 01 2019", formatter)));
+		transaction.add(new Transaction(20424444082L,-500,balance2,LocalDate.parse("10 01 2019", formatter)));
+		transaction.add(new Transaction(20424444082L,-500,balance2,LocalDate.parse("10 01 2019", formatter)));
+		transaction.add(new Transaction(20424444082L,-500,balance2,LocalDate.parse("10 01 2019", formatter)));
+		transaction.add(new Transaction(20424444081L,-500,9500,LocalDate.parse("10 01 2019", formatter)));
+		transaction.add(new Transaction(20424444081L,-500,9500,LocalDate.parse("10 01 2019", formatter)));
+		transaction.add(new Transaction(20424444081L,-500,9500,LocalDate.parse("10 01 2019", formatter)));
+		transaction.add(new Transaction(20424444081L,-500,9500,LocalDate.parse("10 01 2019", formatter)));
+		transaction.add(new Transaction(20424444084L,-500,9500,LocalDate.parse("10 01 2019", formatter)));
+		transaction.add(new Transaction(20424444084L,-500,9500,LocalDate.parse("10 01 2019", formatter)));
+		transaction.add(new Transaction(20424444084L,-500,9500,LocalDate.parse("10 01 2019", formatter)));
+		transaction.add(new Transaction(20424444084L,-500,9500,LocalDate.parse("10 01 2019", formatter)));
+		transaction.add(new Transaction(20424444081L,-500,9500,LocalDate.parse("10 01 2019", formatter)));
+		transaction.add(new Transaction(20424444083L,-500,9500,LocalDate.parse("10 01 2019", formatter)));
+	
+	}
+	
+ } 

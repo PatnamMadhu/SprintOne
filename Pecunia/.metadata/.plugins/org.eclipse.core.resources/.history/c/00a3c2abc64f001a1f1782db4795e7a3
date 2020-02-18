@@ -1,0 +1,14 @@
+package com.capgemini.pecunia.services;
+
+import com.capgemini.pecunia.DTO.Account;
+import com.capgemini.pecunia.util.AccountListRepository;
+
+public class AccountVerificationService {
+
+	
+	public boolean accountVerificationService(long accountId){
+		
+		
+		return true;
+	}
+}

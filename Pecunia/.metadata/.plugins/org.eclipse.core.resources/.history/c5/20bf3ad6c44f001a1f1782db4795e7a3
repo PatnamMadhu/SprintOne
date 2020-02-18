@@ -1,0 +1,17 @@
+package com.capgemini.pecunia.services;
+
+import com.capgemini.pecunia.DTO.Account;
+import com.capgemini.pecunia.util.AccountListRepository;
+
+public class AccountVerificationService {
+	@SuppressWarnings("static-access")
+	public boolean AccountVerification(){
+		Account account=new Account();
+		AccountListRepository accountListRepository =new AccountListRepository();
+		if((accountListRepository.getAccounts()).containsKey(account.getAccountNumber())) {
+			System.out.println("Current Balance : "+(accountListRepository.getAccounts()).get(account.getAccountNumber()));
+			return true;
+		}
+		return false;
+	}
+}

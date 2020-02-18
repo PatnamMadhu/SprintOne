@@ -1,0 +1,18 @@
+ package com.capgemini.pecunia.util;
+
+import java.time.LocalDate;
+import java.time.format.DateTimeFormatter;
+import java.util.ArrayList;
+import java.util.List;
+
+import com.capgemini.pecunia.DAO.Transaction;
+
+public class TransactionRepository {
+	List<Transaction> transaction=new ArrayList<Transaction>();
+	
+	public TransactionRepository() {
+		DateTimeFormatter formatter =DateTimeFormatter.ofPattern("dd MM yyyy");
+		transaction.add(new Transaction(20424444083L,-500,9500,LocalDate.parse("10 01 2019", formatter)));
+	}
+	
+ } 

@@ -1,0 +1,84 @@
+package com.capgemini.pecunia.UI;
+import java.util.Scanner;
+import java.time.LocalDate;
+import java.util.List;
+
+import com.capgemini.pecunia.DTO.Transaction;
+import com.capgemini.pecunia.services.PassbookMaintenanceServiceImpl;
+
+
+public class PassbookController 
+{
+	public static void main(String...arg) 
+	{
+		Scanner sc=new Scanner(System.in);
+		System.out.println("Enter your account number");
+		String accountNumber=sc.next();
+		
+		try 
+		{
+			PassbookMaintenanceServiceImpl accountObj=new PassbookMaintenanceServiceImpl();
+			boolean result= accountObj.accountVerificationService(accountNumber);
+			if(result) 
+			{
+				System.out.println("1.Passbook Update\t2.Account Summary\t3.Exit");
+				System.out.println("Enter your option");
+				
+
+				while(true) {
+					int option=sc.nextInt();
+					switch(option) 
+					{
+						case 1:
+							List<Transaction> listOfTransaction=accountObj.updatePassbook(accountNumber);
+							System.out.println("AccountNumber"+"    "+"Transaction"+"  "+"DateOfTransaction"+"\n");
+							for(Transaction x:listOfTransaction) 
+							{
+								System.out.println(x.getAccountNumber()+"        "+x.getMoney()+"     "+x.getDate()+"\n");
+							}
+							break;
+						case 2:
+							System.out.println("Enter From Date and To Date\n");
+							System.out.println("Enter  Dates as yyyy-MM-dd format :");
+							String fromDate=sc.next(),toDate=sc.next();
+							LocalDate fDate=LocalDate.parse(fromDate);
+							LocalDate lDate=LocalDate.parse(toDate);
+							List<Transaction> dateOfTransaction=null;
+							try {
+								dateOfTransaction=accountObj.accountSummary(accountNumber,fDate,lDate);
+								System.out.println("Account Number"+"    "+"Transaction"+"  "+"Date of Transaction"+"\n");
+								int count=0;
+								for(Transaction x:dateOfTransaction) 
+								{
+									System.out.println(x.getAccountNumber()+"       "+x.getMoney()+"      "+x.getDate()+"\n");
+									count++;
+								}
+								if(count==0) {
+									System.out.println("You have not performed any transactions during Entered Dates");
+								}
+							}
+							catch(Exception e) {
+								System.out.println(e);
+							}
+
+							break;
+						case 3:
+							System.exit(1);
+							break;
+					}
+				}
+				
+			}
+			else 
+			{
+				
+				System.out.println("\nAccount number does not exist in ");
+			}
+		}
+		catch(Exception e) 
+		{
+			System.out.println(e);
+		}
+			sc.close();
+	}
+}

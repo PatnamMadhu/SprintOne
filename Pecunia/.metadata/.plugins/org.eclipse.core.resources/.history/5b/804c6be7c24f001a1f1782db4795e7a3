@@ -1,0 +1,14 @@
+package com.capgemini.pecunia.util;
+
+import java.util.HashMap;
+import java.util.Map;
+
+public class AccountListRepository {
+	private static Map<Long,Double> accounts=new HashMap<Long,Double>();
+	AccountListRepository(){
+		accounts.put(20424444083l, 13300.0);
+		accounts.put(20424444081l, 27000.0);
+		accounts.put(20424444082l, 9100.0);
+		accounts.put(20424444084l, 64300.0);
+	}
+}

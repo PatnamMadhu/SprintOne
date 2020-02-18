@@ -1,0 +1,14 @@
+package com.capgemini.pecunia.services;
+
+import com.capgemini.pecunia.exceptions.AccountNumberValidation;
+
+public class Validations {
+		
+
+		public void accountNumberValidation(long accountNumber) throws AccountNumberValidation{
+			int length = String.valueOf(accountNumber).length();
+			if(accountNumber!=12) {
+				throw new AccountNumberValidation("Account number must contains 12 digits");
+			}
+		}
+}

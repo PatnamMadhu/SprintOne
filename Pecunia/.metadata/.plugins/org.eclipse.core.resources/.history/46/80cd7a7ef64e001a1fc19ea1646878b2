@@ -1,0 +1,8 @@
+package com.capgemini.pecunia.DTO;
+
+import java.util.Date;
+
+public class Passbook {
+	private long accountNumber;
+	private Date fdate,tdate;
+}

@@ -1,0 +1,10 @@
+package com.capgemini.pecunia.DAO;
+
+import java.time.LocalDate;
+import java.util.List;
+
+public interface PassbookMaintenaceDao {
+	public List<?> updatePassbook(String accountNumber);
+	public List<?> accountSummary(String accountNumber,LocalDate fdate,LocalDate lDate);
+	public boolean accountValidation();
+}

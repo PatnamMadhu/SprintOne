@@ -1,0 +1,44 @@
+package com.capgemini.pecunia.DAO;
+
+import java.util.Date;
+
+public class Transaction {
+	
+	private long accountNumber;
+	private long money,avlBalance;
+	Date date;
+	public Transaction(long accountNumber, long money, long avlBalance, Date date) {
+		super();
+		this.accountNumber = accountNumber;
+		this.money = money;
+		this.avlBalance = avlBalance;
+		this.date = date;
+	}
+	public long getAccountNumber() {
+		return accountNumber;
+	}
+	public void setAccountNumber(long accountNumber) {
+		this.accountNumber = accountNumber;
+	}
+	public long getMoney() {
+		return money;
+	}
+	public void setMoney(long money) {
+		this.money = money;
+	}
+	public long getAvlBalance() {
+		return avlBalance;
+	}
+	public void setAvlBalance(long avlBalance) {
+		this.avlBalance = avlBalance;
+	}
+	public Date getDate() {
+		return date;
+	}
+	public void setDate(Date date) {
+		this.date = date;
+	}
+	
+
+	
+}

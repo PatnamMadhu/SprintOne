@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="UTF-8"?><testrun name="PassbookMaintenanceServiceImplTest" project="sprint1" tests="3" started="3" failures="0" errors="0" ignored="0">
+  <testsuite name="com.capgemini.pecunia.ServicesTest.PassbookMaintenanceServiceImplTest" time="0.114" displayname="PassbookMaintenanceServiceImplTest" uniqueid="[engine:junit-jupiter]/[class:com.capgemini.pecunia.ServicesTest.PassbookMaintenanceServiceImplTest]">
+    <testcase name="testAccountVedrification" classname="com.capgemini.pecunia.ServicesTest.PassbookMaintenanceServiceImplTest" time="0.077" displayname="testAccountVedrification()" uniqueid="[engine:junit-jupiter]/[class:com.capgemini.pecunia.ServicesTest.PassbookMaintenanceServiceImplTest]/[method:testAccountVedrification()]"/>
+    <testcase name="testAccountSummaryService" classname="com.capgemini.pecunia.ServicesTest.PassbookMaintenanceServiceImplTest" time="0.013" displayname="testAccountSummaryService()" uniqueid="[engine:junit-jupiter]/[class:com.capgemini.pecunia.ServicesTest.PassbookMaintenanceServiceImplTest]/[method:testAccountSummaryService()]"/>
+    <testcase name="testUpdatePassbookService" classname="com.capgemini.pecunia.ServicesTest.PassbookMaintenanceServiceImplTest" time="0.024" displayname="testUpdatePassbookService()" uniqueid="[engine:junit-jupiter]/[class:com.capgemini.pecunia.ServicesTest.PassbookMaintenanceServiceImplTest]/[method:testUpdatePassbookService()]"/>
+  </testsuite>
+</testrun>

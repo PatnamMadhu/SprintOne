@@ -1,0 +1,16 @@
+package com.capgemini.pecunia.ServicesTest;
+
+import static org.junit.jupiter.api.Assertions.assertTrue;
+
+import com.capgemini.pecunia.exceptions.AccountNumberValidation;
+import com.capgemini.pecunia.services.PassbookMaintenanceServiceImpl;
+
+public class PassbookMaintenanceServiceImplTest {
+	public void testAccountVedrification() throws AccountNumberValidation
+	{
+		PassbookMaintenanceServiceImpl testObj=new PassbookMaintenanceServiceImpl();
+		boolean result=testObj.accountVerificationService("20424444086");
+		assertTrue(result);
+	}
+	
+}

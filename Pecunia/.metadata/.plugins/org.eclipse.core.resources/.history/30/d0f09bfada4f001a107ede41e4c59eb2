@@ -1,0 +1,10 @@
+package com.capgemini.pecunia.services;
+
+public class PassBookMaintananceService {
+
+	public void passBookMaintananceService(long accountNumber) {
+		
+		
+	}
+
+}

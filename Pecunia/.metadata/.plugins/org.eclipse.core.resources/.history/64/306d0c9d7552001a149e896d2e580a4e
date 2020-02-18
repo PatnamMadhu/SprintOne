@@ -1,0 +1,29 @@
+package com.capgemini.pecunia.DTO;
+
+import java.time.LocalDate;
+import java.util.Date;
+
+public class Passbook {
+	private long accountNumber;
+	Date fdate,tdate;
+	
+	public long getAccountNumber() {
+		return accountNumber;
+	}
+	public void setAccountNumber(long accountNumber) {
+		this.accountNumber = accountNumber;
+	}
+	public Date getFdate() {
+		return fdate;
+	}
+	public void setFdate(LocalDate localDate) {
+		this.fdate = localDate;
+	}
+	public Date getTdate() {
+		return tdate;
+	}
+	public void setTdate(Date tdate) {
+		this.tdate = tdate;
+	}
+
+}

@@ -1,0 +1,61 @@
+package com.capgemini.pecunia.UI;
+import java.util.Scanner;
+import java.util.List;
+
+import com.capgemini.pecunia.DTO.Transaction;
+import com.capgemini.pecunia.services.PassbookMaintenanceServiceImpl;
+
+
+public class PassbookController 
+{
+	public static void main(String...arg) 
+	{
+		Scanner sc=new Scanner(System.in);
+		System.out.println("Enter your account number");
+		System.out.println();
+		String accountNumber=sc.next();
+		
+		try 
+		{
+			PassbookMaintenanceServiceImpl accountObj=new PassbookMaintenanceServiceImpl();
+			boolean result= accountObj.accountVerificationService(accountNumber);
+			if(result) 
+			{
+				System.out.println("1.Passbook Update\n2.Account Summary\n3.Exit");
+				System.out.println();
+				System.out.println("Enter your option");
+				
+				while(true)
+				{
+				
+					int option=sc.nextInt();
+					
+					switch(option) 
+					{
+						case 1:
+							List<Transaction> listOfTransaction=accountObj.updatePassbook(accountNumber);
+							for(Transaction x:listOfTransaction) {
+								System.out.println(x.getAccountNumber()+"    "+x.getMoney()+x.getDate()+"\n");
+							}
+							
+							break;
+						case 2:
+							
+							break;
+					}
+				}
+				
+			}
+			else 
+			{
+				
+				System.out.println("\nAccount number does not exist in ");
+			}
+		}
+		catch(Exception e) 
+		{
+			System.out.println(e);
+		}
+			sc.close();
+	}
+}

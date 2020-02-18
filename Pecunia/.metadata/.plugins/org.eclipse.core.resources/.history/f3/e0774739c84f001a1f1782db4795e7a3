@@ -1,0 +1,15 @@
+package com.capgemini.pecunia.services;
+
+import com.capgemini.pecunia.DAO.AccountVerificationDAO;
+import com.capgemini.pecunia.DTO.Account;
+import com.capgemini.pecunia.util.AccountListRepository;
+
+public class AccountVerificationService {
+
+	AccountVerificationDAO accountObj=new AccountVerificationDAO();
+	public boolean accountVerificationService(long accountId){
+		boolean result=accountObj.accountVerificationDAO(accountId);
+		
+		return result;
+	}
+}

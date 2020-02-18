@@ -1,0 +1,73 @@
+package com.capgemini.pecunia.UI;
+import java.util.Scanner;
+import java.time.LocalDate;
+import java.time.format.DateTimeFormatter;
+import java.util.List;
+
+import com.capgemini.pecunia.DTO.Transaction;
+import com.capgemini.pecunia.services.PassbookMaintenanceServiceImpl;
+
+
+public class PassbookController 
+{
+	public static void main(String...arg) 
+	{
+		Scanner sc=new Scanner(System.in);
+		System.out.println("Enter your account number");
+		System.out.println();
+		String accountNumber=sc.next();
+		
+		try 
+		{
+			PassbookMaintenanceServiceImpl accountObj=new PassbookMaintenanceServiceImpl();
+			boolean result= accountObj.accountVerificationService(accountNumber);
+			if(result) 
+			{
+				System.out.println("1.Passbook Update\n2.Account Summary\n3.Exit");
+				System.out.println();
+				System.out.println("Enter your option");
+				
+				while(true)
+				{
+				
+					int option=sc.nextInt();
+					switch(option) 
+					{
+						case 1:
+							List<Transaction> listOfTransaction=accountObj.updatePassbook(accountNumber);
+							for(Transaction x:listOfTransaction) 
+							{
+								System.out.println(x.getAccountNumber()+"    "+x.getMoney()+x.getDate()+"\n");
+							}
+							break;
+						case 2:
+							System.out.println("Enter From Date and To Date\n");
+							String fromDate=sc.next(),toDate=sc.next();
+							DateTimeFormatter formatter= DateTimeFormatter.ofPattern("dd MM yyyy");
+							try {
+							accountObj.accountSummary(accountNumber, LocalDate.parse(fromDate, formatter),LocalDate.parse(toDate, formatter));
+							}
+							catch(Exception e) {
+								System.out.println(e);
+							}
+							break;
+						case 3:
+							System.exit(1);
+							break;
+					}
+				}
+				
+			}
+			else 
+			{
+				
+				System.out.println("\nAccount number does not exist in ");
+			}
+		}
+		catch(Exception e) 
+		{
+			System.out.println(e);
+		}
+			sc.close();
+	}
+}

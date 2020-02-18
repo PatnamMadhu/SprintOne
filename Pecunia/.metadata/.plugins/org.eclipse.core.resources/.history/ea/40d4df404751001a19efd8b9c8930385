@@ -1,0 +1,5 @@
+package com.capgemini.pecunia.DAO;
+
+public interface PassbookMaintenaceDAO {
+
+}
